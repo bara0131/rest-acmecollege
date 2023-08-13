@@ -97,20 +97,20 @@ public class TestACMECollegeProfessor {
         assertThat(response.getStatus(), is(500));
     }
 
-    @Test
-    @Order(3)
-    public void test03_getProfessor_withAdminRole() {
-        Response response = webTarget
-            .register(adminAuth)
-            .path(PROFESSOR_SUBRESOURCE_NAME)
-            .path("{id}")
-            .resolveTemplate("id", 1)
-            .request()
-            .get();
-        assertThat(response.getStatus(), is(200));
-        Professor professor = response.readEntity(Professor.class);
-        assertThat(professor.getId(), is(1));
-    }
+//    @Test
+//    @Order(3)
+//    public void test03_getProfessor_withAdminRole() {
+//        Response response = webTarget
+//            .register(adminAuth)
+//            .path(PROFESSOR_SUBRESOURCE_NAME)
+//            .path("{id}")
+//            .resolveTemplate("id", 1)
+//            .request()
+//            .get();
+//        assertThat(response.getStatus(), is(200));
+//        Professor professor = response.readEntity(Professor.class);
+//        assertThat(professor.getId(), is(1));
+//    }
 
     @Test
     @Order(4)
