@@ -14,6 +14,13 @@
  */
 package acmecollege.entity;
 
+/**
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
+ */
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -40,10 +47,12 @@ import javax.persistence.Table;
 @Table(name = "club_membership")
 @AttributeOverride(name = "id", column = @Column(name="membership_id"))
 @NamedQuery(name = ClubMembership.FIND_BY_ID, query = "SELECT cm FROM ClubMembership cm WHERE cm.id = :param1")
+@NamedQuery(name = ClubMembership.All_CLUBMEMBERSHIP_QUERY, query = "SELECT cm FROM ClubMembership cm"   )
 public class ClubMembership extends PojoBase implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	 public static final String FIND_BY_ID = "ClubMembership.findById";
+	 public static final String All_CLUBMEMBERSHIP_QUERY = "ClubMembership.findAll";
 	
 	// TODO CM03 - Add annotations for M:1.  Changes to this class should cascade to StudentClub.
 	 @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

@@ -34,6 +34,14 @@ import javax.persistence.MapsId;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+/**
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
+ */
+
 @SuppressWarnings("unused")
 /**
  * The persistent class for the course_registration database table.
@@ -45,6 +53,8 @@ import javax.persistence.Table;
 @NamedQuery(name = "CourseRegistration.updateProfessorIdToNull" , query = "UPDATE CourseRegistration cr SET cr.professor.id = NULL WHERE cr.professor.id = :professorId")
 public class CourseRegistration extends PojoBaseCompositeKey<CourseRegistrationPK> implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	// Hint - What annotation is used for a composite primary key type?
 	@EmbeddedId

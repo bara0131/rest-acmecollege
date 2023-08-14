@@ -1,5 +1,9 @@
 /**
- * 
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
  */
 package acmecollege.rest.resource;
 
@@ -34,6 +38,14 @@ import acmecollege.entity.Student;
 /**
  * @author parha
  *
+ */
+
+/**
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
  */
 
 @Path(COURSE_RESOURCE_NAME)
@@ -94,7 +106,7 @@ public class CourseResource {
 		//TODO: retrieve the courses 
 		LOG.debug("Retrieving all Courses...");
 		 List<Course> courses = service.getAll(Course.class, Course.ALL_COURSES_QUERY);
-		 LOG.debug("Student clubs found = {}", courses);
+	
 		 Response response = Response.ok(courses).build();
 		return response;
 	}

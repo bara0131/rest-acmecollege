@@ -13,7 +13,13 @@
  * Note:  Students do NOT need to change anything in this class.
  */
 package acmecollege.rest;
-
+/**
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
+ */
 import acmecollege.rest.resource.HttpErrorResponse;
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.core.Response;

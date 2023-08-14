@@ -67,6 +67,14 @@ import acmecollege.entity.StudentClub;
 @SuppressWarnings("unused")
 
 /**
+ *  * Updated by:  Group 13
+ *   041042258, Fatemeh, Baladi (as from ACSIS)
+ *   041040628, Parham, Barati (as from ACSIS)
+ *   041043087, Justin, Rackus (as from ACSIS)
+ *   040863962, Pouya, Varghaei (as from ACSIS)
+ */
+
+/**
  * Stateless Singleton EJB Bean - ACMECollegeService
  */
 @Singleton
@@ -103,6 +111,22 @@ public class ACMECollegeService implements Serializable {
         em.persist(newCourse);
         return newCourse;
     }
+    
+    @Transactional
+    public ClubMembership persistCourse(ClubMembership newClubmembership) {
+        em.persist(newClubmembership);
+        return newClubmembership;
+    }
+    
+    @Transactional
+    public CourseRegistration persistCourseregistration(CourseRegistration newCourseregistration) {
+        em.persist(newCourseregistration);
+        return newCourseregistration;
+    }
+    
+    
+    
+    
     
     
 
